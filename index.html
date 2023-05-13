@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-
     <title>Aperture</title>
 </head>
 <body class="loading">
@@ -216,5 +214,12 @@
 
 
 </footer>
+<script>
+    document.querySelectorAll('.burger-list a').forEach(el=>{
+        el.addEventListener("click", ()=>{
+            document.querySelector('.burger-wrapper input').checked = false
+        })
+    })
+</script>
 </body>
 </html>
